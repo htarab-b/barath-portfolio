@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #181818;
+}
+.navbar a {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #0096FF;
+    transition: cubic-bezier(0.13, -0.14, 0.26, 0.55) 300ms;
+}
+.navbar .contact {
+    position: fixed;
+    right: 0;
+}
+.navbar a:hover {
+    background-color: #0096FF;
+    color: azure;
+    box-shadow: 0 0 2vw #0096FF;
+    text-shadow: 0 0 3vw azure;
+}
+
+.navbar .active {
+    background-color: #0F52BA;
+    color: azure;
+}

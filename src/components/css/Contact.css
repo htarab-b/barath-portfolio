@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+.contactcontent {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+
+.contactcontent h1 {
+    position: fixed;
+    top: 5%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5vw;
+    cursor: default;
+    width: 100%;
+    text-align: center;
+}
+.contactcontent h2 {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    top: 18%;
+    width: 100%;
+    text-align: center;
+    color: #0096FF;
+}
+
+.contactcontent .box {
+    position: fixed;
+    top: 30%;
+    left: 8%;
+}
+
+.contactcontent .cards {
+    margin-bottom: 20px;
+}
+
+.contactcontent .box .cards img {
+    margin-right: 30px;
+}
+
+.contactcontent .box .cards a {
+    color: azure;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 4.5vw;
+    font-weight: 400;
+    display: flex;
+}
+
+.contactcontent .box .cards a .githublogo {
+    background-color: white;
+    border-radius: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactcontent h1 {
+        font-size: 8vw;
+        top: 8%;
+    }
+    .contactcontent h2 {
+        font-size: 4vw;
+        top: 20%;
+    }
+    .contactcontent .box .cards a {
+        font-size: 7vw;
+    }
+    .contactcontent .box .cards img {
+        margin-right: 10px;
+    }
+    .contactcontent .box .cards a .githublogo {
+        height: 100%;
+        margin-top: 7px;
+        border-radius: 5px;
+    }
+}

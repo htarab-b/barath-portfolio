@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    overflow: hidden;
+}
+
+.homecontent {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-size: contain;
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+.homecontent h1 {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10vw;
+    cursor: default;
+}
+
+.homecontent h1 .highlight {
+    font-weight: 500;
+    color: #0096FF;
+    text-shadow: 0 0 15vw #0096FF;
+}
+.homecontent h1 .name {
+    font-weight: 500;
+    color: #0096FF;
+}
+
+@media screen and (max-width: 768px) {
+    .homecontent h1 {
+        top: 10%;
+        left: 13%;
+        font-size: 12vw;
+    }
+    .homecontent {
+        background-position: 0px bottom;
+    }
+}
