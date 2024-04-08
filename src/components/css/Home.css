@@ -20,13 +20,13 @@
 
 .homecontent h1 {
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 40%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 10vw;
+    font-size: 9.5vw;
     cursor: default;
     height: 100%;
 }

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
 
 * {
     overflow: hidden;
@@ -33,7 +33,7 @@
 
 .skillstackcontent {
     position: fixed;
-    top: 12%;
+    top: 20%;
     right: 3%;
     width: 45%;
     height: 100%;
@@ -47,17 +47,17 @@
     font-weight: 300;
     font-style: normal;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 .skillstackcontent p .highlight {
     font-weight: 400;
-    color: #0096FF;
+    color: #0096ff;
 }
 
 .skillstackcontent p img {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 
 @media screen and (max-width: 768px) {
     .skillstackmain h1 {
