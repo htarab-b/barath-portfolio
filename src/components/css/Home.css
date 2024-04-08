@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
+
 * {
     overflow: hidden;
 }
@@ -26,16 +28,20 @@
     font-style: normal;
     font-size: 10vw;
     cursor: default;
+    height: 100%;
 }
 
 .homecontent h1 .highlight {
-    font-weight: 500;
-    color: #0096FF;
-    text-shadow: 0 0 15vw #0096FF;
+    font-family: "Jost", sans-serif;
+    font-weight: 350;
+    color: #0096ff;
+    text-shadow: 0 0 15vw #0096ff;
+    font-size: 11vw;
 }
+
 .homecontent h1 .name {
-    font-weight: 500;
-    color: #0096FF;
+    font-weight: 350;
+    color: #0096ff;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,5 +52,12 @@
     }
     .homecontent {
         background-position: 0px bottom;
+    }
+    .homecontent h1 .name {
+        font-weight: 400;
+    }
+    .homecontent h1 .highlight {
+        font-weight: 400;
+        font-size: 14vw;
     }
 }

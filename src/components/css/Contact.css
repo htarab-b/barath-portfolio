@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
 
 * {
     overflow: hidden;
@@ -38,7 +38,7 @@
     top: 18%;
     width: 100%;
     text-align: center;
-    color: #0096FF;
+    color: #0096ff;
 }
 
 .contactcontent .box {
@@ -47,15 +47,28 @@
     left: 8%;
 }
 
+.contactcontent .boxright {
+    position: fixed;
+    top: 30%;
+    right: 8%;
+    text-align: right;
+}
+
 .contactcontent .cards {
     margin-bottom: 20px;
+    width: 400px;
 }
 
 .contactcontent .box .cards img {
     margin-right: 30px;
 }
 
-.contactcontent .box .cards a {
+.contactcontent .boxright .cards img {
+    margin-left: 30px;
+}
+
+.contactcontent .box .cards a,
+.contactcontent .boxright .cards a {
     color: azure;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -66,9 +79,22 @@
     display: flex;
 }
 
+.contactcontent .boxright .cards a {
+    justify-content: right;
+}
+
 .contactcontent .box .cards a .githublogo {
     background-color: white;
-    border-radius: 23px;
+    border-radius: 15px;
+    margin-top: 12px;
+    height: 100%;
+}
+
+.contactcontent .boxright .cards a .leetcodelogo {
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 12px;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,11 +106,23 @@
         font-size: 4vw;
         top: 20%;
     }
+    .contactcontent .box .cards {
+        width: 180px;
+    }
     .contactcontent .box .cards a {
         font-size: 7vw;
     }
     .contactcontent .box .cards img {
         margin-right: 10px;
+    }
+    .contactcontent .boxright .cards {
+        width: 180px;
+    }
+    .contactcontent .boxright .cards a {
+        font-size: 7vw;
+    }
+    .contactcontent .boxright .cards img {
+        margin-left: 10px;
     }
     .contactcontent .box .cards a .githublogo {
         height: 100%;
