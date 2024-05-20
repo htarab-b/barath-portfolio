@@ -19,7 +19,7 @@ const Contact = () => {
           backgroundImage: `url(${Contactimage})`,
         }}
       >
-        <h1>Reach me through my Social Media Profiles</h1>
+        <h1>Reach me through my Social Media Handles</h1>
         <h2>I look forward to New Projects and Collaborations</h2>
         <div className="box">
           <div className="cards">
