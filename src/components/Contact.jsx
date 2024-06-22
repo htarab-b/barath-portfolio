@@ -1,17 +1,35 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion';
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
   
   return (
     <div className="min-h-screen bg-black text-white pt-20 lg:pt-24" id="Contact">
-      <h1 className="text-5xl lg:text-6xl text-center"><span className="bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent">Contact Me</span></h1>
-      <h2 className="w-10/12 sm:w-4/5 mx-auto text-sm sm:text-base lg:text-lg mt-3 lg:mt-8 text-center">Ready to start your next project? Contact me through my social media profiles. I look forward to collaborating with you!</h2>
+      <motion.h1 
+        initial = {{ opacity:0 }}
+        whileInView = {{ opacity:1 }}
+        transition = {{ duration:1, delay:0}} 
+      className="text-5xl lg:text-6xl text-center"><span className="bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent">Contact Me</span></motion.h1>
+      
+      <motion.h2 
+        initial = {{ opacity:0 }}
+        whileInView = {{ opacity:1 }}
+        transition = {{ duration:1, delay:0.5}} 
+      className="w-10/12 sm:w-4/5 mx-auto text-sm sm:text-base lg:text-lg mt-3 lg:mt-8 text-center">Ready to start your next project? Contact me through my social media profiles. I look forward to collaborating with you!</motion.h2>
 
       <div className="lg:flex">
-        <div className="flex flex-wrap lg:block mt-5 lg:mt-10 px-20 lg:pr-0 items-center justify-center lg:justify-end lg:w-1/3">
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">Mail</h3>
+        <div className="flex flex-wrap lg:block mt-5 lg:mt-7 px-20 lg:pr-0 items-center justify-center lg:justify-end lg:w-1/3">
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">Mail</motion.h3>
                 <a href="mailto:barathb.dev@gmail.com">
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-red-500 before:duration-200 before:ease-linear hover:bg-red-500 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -19,10 +37,18 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">Linkedin</h3>
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">Linkedin</motion.h3>
                 <a href="https://www.linkedin.com/in/barathbalasundaram/" target='_blank'>
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-blue-500 before:duration-200 before:ease-linear hover:bg-blue-500 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="4.983" cy="5.009" r="2.188"/>
@@ -30,10 +56,18 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">Instagram</h3>
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">Instagram</motion.h3>
                 <a href="https://www.instagram.com/htarab_b/" target='_blank'>
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-pink-600 before:duration-200 before:ease-linear hover:bg-pink-600 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,10 +75,18 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">GitHub</h3>
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">GitHub</motion.h3>
                 <a href="https://github.com/htarab-b" target='_blank'>
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-gray-900 before:duration-200 before:ease-linear hover:bg-gray-900 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
@@ -52,10 +94,18 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">Leetcode</h3>
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">Leetcode</motion.h3>
                 <a href="https://leetcode.com/u/htarab_b/" target='_blank'>
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-amber-500 before:duration-200 before:ease-linear hover:bg-amber-500 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -63,10 +113,18 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
-            <div className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
-                <h3 className="hidden lg:flex text-lg">Codepen</h3>
+            <motion.div 
+                initial = {{ x:-100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="block lg:flex items-center justify-end gap-5 p-3 lg:py-5">
+                <motion.h3 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0.5 }}
+                className="hidden lg:flex text-lg">Codepen</motion.h3>
                 <a href="https://codepen.io/htarab-b" target='_blank'>
                     <div className="relative flex p-2 rounded-full items-center justify-center overflow-hidden bg-white text-black transition-all duration-500 before:absolute before:inset-0 before:border-0 before:border-gray-900 before:duration-200 before:ease-linear hover:bg-gray-900 hover:text-white hover:before:border-[25px]">
                         <svg className="relative z-10 h-7 sm:h-9 lg:h-10 bg-transparent fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -74,26 +132,46 @@ function Contact() {
                         </svg>
                     </div>
                 </a>
-            </div>
+            </motion.div>
 
         </div>
 
-        <div className="text-left w-2/3 mt-7 sm:mt-10 lg:my-auto mx-auto lg:pr-20 items-start">
-            <h3 className="text-center text-sm sm:text-base lg:text-lg pb-5 sm:pb-8">Or leave a message, I will get back to you</h3>
-            <form action='https://docs.google.com/forms/d/e/1FAIpQLSdvG-3uuAZlr_IZw_YT0SSOPylvC4-xMqLzD9OKSJmzD3kpPQ/formResponse' method='post' target="hidden_iframe" onSubmit={() => setSubmitted(true)} className="lg:w-2/3 mx-auto mt-0">
-                <div className="relative z-0 w-full mb-5 group">
+        <div className="text-left lg:w-2/3 mt-7 sm:mt-10 lg:my-auto mx-auto lg:pr-20 items-start">
+            <motion.h3 
+                initial = {{ x:100, opacity:0 }}
+                whileInView = {{ x:0, opacity:1 }}
+                transition = {{ duration:1, delay:0 }}
+            className="text-center text-sm sm:text-base lg:text-lg pb-5 sm:pb-8">Or leave a message. I will get back to you</motion.h3>
+            <form action='https://docs.google.com/forms/d/e/1FAIpQLSdvG-3uuAZlr_IZw_YT0SSOPylvC4-xMqLzD9OKSJmzD3kpPQ/formResponse' method='post' target="hidden_iframe" onSubmit={() => setSubmitted(true)} className="lg:w-2/3 mx-auto mt-0 w-2/3">
+                <motion.div 
+                    initial = {{ x:100, opacity:0 }}
+                    whileInView = {{ x:0, opacity:1 }}
+                    transition = {{ duration:1, delay:0 }}
+                className="relative z-0 w-full mb-5 group">
                     <input type="text" name="entry.1621349201" id="Name" className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-emerald-500 peer" placeholder=" " required disabled={submitted} />
                     <label className="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
-                </div>
-                <div className="relative z-0 w-full mb-5 group">
+                </motion.div>
+                <motion.div 
+                    initial = {{ x:100, opacity:0 }}
+                    whileInView = {{ x:0, opacity:1 }}
+                    transition = {{ duration:1, delay:0 }}
+                className="relative z-0 w-full mb-5 group">
                     <input type="email" name="entry.1661846347" id="Email" className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-emerald-500 peer" placeholder=" " required disabled={submitted} />
                     <label className="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
-                </div>
-                <div className="relative z-0 w-full mb-5 group">
+                </motion.div>
+                <motion.div 
+                    initial = {{ x:100, opacity:0 }}
+                    whileInView = {{ x:0, opacity:1 }}
+                    transition = {{ duration:1, delay:0 }}
+                className="relative z-0 w-full mb-5 group">
                     <textarea name="entry.592867916" id="Message" rows="4" className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 appearance-none text-white border-gray-600 focus:outline-none focus:ring-0 focus:border-emerald-500 peer" placeholder=" " required disabled={submitted}></textarea>
                     <label className="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
-                </div>
-                <input type="submit" className="text-black bg-gradient-to-r from-emerald-400 to-cyan-500 focus:ring-4 focus:outline-none focus:ring-emerald-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-5 text-center transition-all duration-300 cursor-pointer" value="Submit" hidden={submitted} />
+                </motion.div>
+                <motion.input 
+                    initial = {{ opacity:0 }}
+                    whileInView = {{ opacity:1 }}
+                    transition = {{ duration:1, delay:0 }}
+                type="submit" className="text-black bg-gradient-to-r from-emerald-400 to-cyan-500 focus:ring-4 focus:outline-none focus:ring-emerald-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-2 sm:mt-5 text-center transition-all duration-300 cursor-pointer" value="Submit" hidden={submitted} />
             </form>
         </div>
       </div>

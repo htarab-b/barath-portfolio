@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import { useMediaQuery } from 'react-responsive';
+import { motion } from 'framer-motion';
 
 // Front-End
 import html5 from '../assets/Tech Stack/html5.svg';
@@ -33,14 +34,27 @@ function Skillstack() {
 
   return (
     <div className="min-h-screen bg-black text-white pt-20 lg:pt-24" id="Skillstack">
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl text-center">
+      <motion.h1 
+        initial = {{ opacity:0 }}
+        whileInView = {{ opacity:1 }}
+        transition = {{ duration:1, delay:0}}
+      className="text-4xl sm:text-5xl lg:text-6xl text-center">
         <span className="bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent">My Tech Stack</span>
-      </h1>
-      <p className="sm:hidden px-8 mt-5 text-justify">
+      </motion.h1>
+      <motion.p 
+        initial = {{ opacity:0 }}
+        whileInView = {{ opacity:1 }}
+        transition = {{ duration:1, delay:0 }}
+      className="sm:hidden px-8 mt-5 text-justify">
         I utilize a wide variety of tools and frameworks to meet the unique requirements of each project, ensuring efficient and effective development.
-      </p>
+      </motion.p>
 
-      <div className="mt-10 sm:mt-16 lg:mt-10 flex items-center flex-wrap">
+      <motion.div 
+        initial = {{ y:100, opacity:0 }}
+        whileInView = {{ y:0, opacity:1 }}
+        transition = {{ duration:0.8, delay:0}}
+      
+      className="mt-10 sm:mt-16 lg:mt-10 flex items-center flex-wrap">
         <h2 className="text-2xl sm:text-3xl text-center w-full">Front-End</h2>
         <div className="w-full lg:w-3/4 mx-auto mt-2">
           <Marquee speed={speed} pauseOnHover gradient gradientColor="black">
@@ -70,9 +84,14 @@ function Skillstack() {
             </div>
           </Marquee>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-10 flex items-center flex-wrap">
+      <motion.div 
+        initial = {{ y:100, opacity:0 }}
+        whileInView = {{ y:0, opacity:1 }}
+        transition = {{ duration:0.8, delay:0}}
+      
+      className="mt-10 flex items-center flex-wrap">
         <h2 className="text-2xl sm:text-3xl text-center w-full">Back-End</h2>
         <div className="w-full lg:w-3/4 mx-auto mt-2">
           <Marquee speed={speed} pauseOnHover gradient gradientColor="black">
@@ -98,9 +117,14 @@ function Skillstack() {
             </div>
           </Marquee>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-10 flex items-center flex-wrap">
+      <motion.div 
+        initial = {{ y:100, opacity:0 }}
+        whileInView = {{ y:0, opacity:1 }}
+        transition = {{ duration:0.8, delay:0}}
+      
+      className="mt-10 flex items-center flex-wrap">
         <h2 className="text-2xl sm:text-3xl text-center w-full">Database Systems</h2>
         <div className="w-full lg:w-3/4 mx-auto mt-2">
           <Marquee speed={speed} pauseOnHover gradient gradientColor="black">
@@ -122,7 +146,7 @@ function Skillstack() {
             </div>
           </Marquee>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

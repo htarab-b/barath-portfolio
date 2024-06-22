@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion'
 
 function Header() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -44,7 +45,12 @@ function Header() {
   };
 
   return (
-    <nav className="fixed min-w-full shadow bg-gradient-to-r from-emerald-400 to-cyan-500 text-sm sm:text-lg z-50 justify-center">
+    <motion.nav 
+      initial = {{ y:-100, opacity:0 }}
+      animate = {{ y:0, opacity:1 }}
+      transition = {{ duration:0.5, delay:0.7 }}
+
+    className="fixed min-w-full shadow bg-gradient-to-r from-emerald-400 to-cyan-500 text-sm sm:text-lg z-50 justify-center">
       <div className="container flex items-center justify-center py-3 lg:py-5 mx-auto capitalize text-black">
         <a
           href="#Home"
@@ -82,7 +88,7 @@ function Header() {
           Contact
         </a>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 

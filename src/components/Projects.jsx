@@ -1,14 +1,25 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function Projects() {
   return (
     <div className="min-h-screen bg-black text-white pt-20 lg:pt-24" id="Projects">
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl text-center">
+      <motion.h1 
+        initial = {{ opacity:0 }}
+        whileInView = {{ opacity:1 }}
+        transition = {{ duration:1, delay:0}}
+      
+      className="text-4xl sm:text-5xl lg:text-6xl text-center">
         <span className="bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent">Featured Projects</span>
-      </h1>
+      </motion.h1>
 
       <div className="flex p-6 sm:mt-5 sm:w-4/5 lg:w-2/3 gap-7 sm:gap-10 flex-wrap mx-auto">
-        <div className="relative group cursor-pointer w-full">
+        <motion.div 
+            initial = {{ y:100, opacity:0 }}
+            whileInView = {{ y:0, opacity:1 }}
+            transition = {{ duration:0.8, delay:0}}
+      
+        className="relative group cursor-pointer w-full">
             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-lg blur opacity-40 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
             <div className="relative p-5 bg-gray-950 ring-1 ring-gray-950/5 rounded-lg leading-none space-x-6">
                 <a href='#Projects'>
@@ -33,9 +44,14 @@ function Projects() {
                     </div>
                 </a>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="relative group cursor-pointer w-full">
+        <motion.div 
+            initial = {{ y:100, opacity:0 }}
+            whileInView = {{ y:0, opacity:1 }}
+            transition = {{ duration:0.8, delay:0}}
+      
+        className="relative group cursor-pointer w-full">
             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-lg blur opacity-40 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
             <div className="relative p-5 bg-gray-950 ring-1 ring-gray-950/5 rounded-lg leading-none space-x-6">
                 <a href='#Projects'>
@@ -63,9 +79,14 @@ function Projects() {
                     </div>
                 </a>
             </div>
-        </div>
+        </motion.div>
 
-        <div className="relative group cursor-pointer w-full">
+        <motion.div 
+            initial = {{ y:100, opacity:0 }}
+            whileInView = {{ y:0, opacity:1 }}
+            transition = {{ duration:0.8, delay:0}}
+      
+        className="relative group cursor-pointer w-full">
             <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-lg blur opacity-40 group-hover:opacity-100 transition duration-500 group-hover:duration-200"></div>
             <div className="relative p-5 bg-gray-950 ring-1 ring-gray-950/5 rounded-lg leading-none space-x-6">
                 <a href='#Projects'>
@@ -93,7 +114,7 @@ function Projects() {
                     </div>
                 </a>
             </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
