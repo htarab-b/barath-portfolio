@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/work', label: 'Work' },
   { to: '/about', label: 'About' },
   { to: '/experience', label: 'Experience' },
+  { to: '/work', label: 'Work' },
   { to: '/services', label: 'Services' },
-  { to: '/credentials', label: 'Credentials' },
+  { to: '/education', label: 'Education' },
 ];
 
 function Header() {

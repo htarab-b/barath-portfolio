@@ -8,7 +8,7 @@ import Work from './components/Work';
 import About from './components/About';
 import Experience from './components/Experience';
 import Services from './components/Services';
-import Credentials from './components/Credentials';
+import Education from './components/Education';
 
 function App() {
   const location = useLocation();
@@ -112,7 +112,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/credentials" element={<Credentials />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
       <Footer />
     </>

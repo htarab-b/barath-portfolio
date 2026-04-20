@@ -153,14 +153,14 @@ function Home() {
             <span className="card-link">Open Services</span>
           </Link>
 
-          <Link className="panel teaser-card" to="/credentials">
-            <p className="card-kicker">Credentials</p>
-            <h3 className="card-title">Certifications, coursework, and self-inflicted learning sprints</h3>
+          <Link className="panel teaser-card" to="/education">
+            <p className="card-kicker">Education</p>
+            <h3 className="card-title">Degrees, frameworks, and self-inflicted learning sprints</h3>
             <p className="card-copy">
-              The certifications, coursework, and self-inflicted learning sprints that prove I
-              did not just vibe my way into this.
+              The academic background, tech stack, and self-inflicted learning sprints that
+              prove I did not just vibe my way into this.
             </p>
-            <span className="card-link">Open Credentials</span>
+            <span className="card-link">Open Education</span>
           </Link>
         </div>
       </section>
@@ -172,7 +172,7 @@ function Home() {
           <h2 className="section-title">A few outcomes that define the portfolio.</h2>
         </div>
 
-        <div className="detail-grid" style={{ gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' }}>
+        <div className="split-grid">
           <article className="panel detail-card">
             <p className="card-kicker">01</p>
             <h3 className="card-title">RAG-Powered Intelligent QA</h3>
