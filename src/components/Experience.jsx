@@ -165,15 +165,14 @@ function Experience() {
         <div className="panel contact-strip">
           <div>
             <p className="section-label">Next</p>
-            <h2 className="section-title compact-title">See the education.</h2>
+            <h2 className="section-title compact-title">Seen what I've built?</h2>
             <p className="section-copy compact-copy">
-              The Education page covers academic background, tech stack, and the frameworks
-              that support this work.
+              The experience is real, the stack is proven, and the systems are live in production. Here's what I can build for you.
             </p>
           </div>
 
           <div className="contact-actions">
-            <Link className="button button-primary" to="/education">Open Education</Link>
+            <Link className="button button-primary" to="/services">Services I Offer</Link>
             <Link className="button button-secondary" to="/work">Back To Work</Link>
           </div>
         </div>

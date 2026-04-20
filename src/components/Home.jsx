@@ -172,7 +172,7 @@ function Home() {
           <h2 className="section-title">A few outcomes that define the portfolio.</h2>
         </div>
 
-        <div className="detail-grid" style={{ gridTemplateColumns: 'repeat(2, minmax(0, 1fr))' }}>
+        <div className="split-grid">
           <article className="panel detail-card">
             <p className="card-kicker">01</p>
             <h3 className="card-title">RAG-Powered Intelligent QA</h3>

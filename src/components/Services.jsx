@@ -18,10 +18,6 @@ function Services() {
             Whether you need a focused AI component or an end-to-end intelligent system, this
             is what I do.
           </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#services-list">Explore Services</a>
-            <Link className="button button-secondary" to="/#enquiry-form">Get In Touch</Link>
-          </div>
         </div>
       </section>
 

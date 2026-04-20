@@ -17,14 +17,37 @@ function Education() {
       </section>
 
       <section className="section" data-reveal>
-        <div className="credentials-grid">
-          <article className="panel text-card">
-            <p className="card-kicker">Education</p>
-            <h2 className="card-title">Academic background</h2>
-            <ul className="bullet-list">
-              <li>M.Sc Computer Science — SRM Institute of Science and Technology, Chennai (2023 – 2025)</li>
-              <li>B.Sc Computer Science — SLCS, Madurai (2019 – 2022)</li>
-            </ul>
+        <div className="timeline">
+          {/* ── Masters ── */}
+          <article className="panel timeline-item" data-reveal>
+            <div>
+              <span className="timeline-period">2023 – 2025</span>
+              <p className="timeline-company">SRM Institute of Science and Technology, Chennai</p>
+            </div>
+            <div>
+              <h3 className="timeline-role">M.Sc Computer Science</h3>
+              <ul className="bullet-list">
+                <li>
+                  Graduated with a 9.83 CGPA, which is what happens when you actually show up and take things seriously. Led the department's student association as President, shipped two officially approved prototype projects for the department, and picked up freelance work on the side because apparently college wasn't keeping me busy enough.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          {/* ── Bachelors ── */}
+          <article className="panel timeline-item" data-reveal>
+            <div>
+              <span className="timeline-period">2019 – 2022</span>
+              <p className="timeline-company">SLCS, Madurai</p>
+            </div>
+            <div>
+              <h3 className="timeline-role">B.Sc Computer Science</h3>
+              <ul className="bullet-list">
+                <li>
+                  Started college with great enthusiasm for everything except academics. The first two years were character-building in ways that won't make it onto a resume. Somewhere near the end of second year, something clicked — picked up DSA, learned frameworks, built projects that seemed impressive at the time and are now quietly archived. Not pretty in hindsight, but that's where the foundation came from.
+                </li>
+              </ul>
+            </div>
           </article>
         </div>
       </section>
