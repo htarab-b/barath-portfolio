@@ -113,7 +113,7 @@ function Work() {
             <Link className="button button-primary" to="/services">See What I Offer</Link>
             <a
               className="button button-secondary"
-              href="assets/Barath_B-Resume.pdf"
+              href="/assets/Barath_B-Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >

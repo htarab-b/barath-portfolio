@@ -22,7 +22,7 @@ function About() {
 
         <aside className="panel about-portrait-card interactive-panel" data-tilt>
           <div className="portrait-shell portrait-shell-compact">
-            <img className="portrait-image" src="assets/professional-photo.jpg"
+            <img className="portrait-image" src="/assets/professional-photo.jpg"
               alt="Barath B" width="691" height="1024" />
             <div className="portrait-chip portrait-chip-top">Barath B</div>
             <div className="portrait-chip portrait-chip-bottom">AI Engineer</div>

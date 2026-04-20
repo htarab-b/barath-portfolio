@@ -25,7 +25,7 @@ function Home() {
 
           <div className="hero-actions">
             <Link className="button button-primary" to="/work">View Work</Link>
-            <a className="button button-secondary" href="assets/Barath_B-Resume.pdf" target="_blank" rel="noreferrer">
+            <a className="button button-secondary" href="/assets/Barath_B-Resume.pdf" target="_blank" rel="noreferrer">
               Download Resume
             </a>
           </div>
@@ -40,7 +40,7 @@ function Home() {
 
         <aside className="panel hero-visual interactive-panel" data-tilt>
           <div className="portrait-shell">
-            <img className="portrait-image" src="assets/professional-photo.jpg"
+            <img className="portrait-image" src="/assets/professional-photo.jpg"
               alt="Portrait of Barath B" width="691" height="1024" />
             <div className="portrait-chip portrait-chip-top">AI Engineer</div>
             <div className="portrait-chip portrait-chip-bottom">RAG · Agents · LLMs</div>
