@@ -105,7 +105,7 @@ function Education() {
           <div className="contact-actions">
             <a
               className="button button-primary"
-              href="assets/Barath_B-Resume.pdf"
+              href="/assets/Barath_B-Resume.pdf"
               target="_blank"
               rel="noreferrer"
             >
