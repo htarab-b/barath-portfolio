@@ -153,14 +153,14 @@ function Home() {
             <span className="card-link">Open Services</span>
           </Link>
 
-          <Link className="panel teaser-card" to="/credentials">
-            <p className="card-kicker">Credentials</p>
-            <h3 className="card-title">Certifications, coursework, and self-inflicted learning sprints</h3>
+          <Link className="panel teaser-card" to="/education">
+            <p className="card-kicker">Education</p>
+            <h3 className="card-title">Degrees, frameworks, and self-inflicted learning sprints</h3>
             <p className="card-copy">
-              The certifications, coursework, and self-inflicted learning sprints that prove I
-              did not just vibe my way into this.
+              The academic background, tech stack, and self-inflicted learning sprints that
+              prove I did not just vibe my way into this.
             </p>
-            <span className="card-link">Open Credentials</span>
+            <span className="card-link">Open Education</span>
           </Link>
         </div>
       </section>

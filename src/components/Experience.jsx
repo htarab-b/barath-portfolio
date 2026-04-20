@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Experience() {
   return (
@@ -121,6 +122,60 @@ function Experience() {
               </div>
             </div>
           </article>
+        </div>
+      </section>
+
+      {/* ── Pattern ── */}
+      <section className="section" data-reveal>
+        <div className="section-head">
+          <p className="section-label">Pattern</p>
+          <h2 className="section-title">How the experience fits together.</h2>
+        </div>
+
+        <div className="detail-grid">
+          <article className="panel detail-card">
+            <p className="card-kicker">AI Engineering</p>
+            <p className="card-copy">
+              Current work is all AI — RAG pipelines, agentic workflows, LLM integrations,
+              and building the retrieval layer that makes AI systems actually useful. The role
+              is junior in title, sole AI engineer in practice.
+            </p>
+          </article>
+          <article className="panel detail-card">
+            <p className="card-kicker">Full-Stack Foundation</p>
+            <p className="card-copy">
+              Earlier roles built the foundation — React frontends, Django REST APIs, error
+              handling, and production-grade UX. That full-stack instinct now means I ship AI
+              features end-to-end, not just the model layer.
+            </p>
+          </article>
+          <article className="panel detail-card">
+            <p className="card-kicker">The Intersection</p>
+            <p className="card-copy">
+              The full-stack background isn't separate from the AI work — it's what makes it
+              production-ready. I build the pipeline, wrap it in an API, connect it to the
+              frontend, and deploy the whole thing. No handoffs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="section" data-reveal>
+        <div className="panel contact-strip">
+          <div>
+            <p className="section-label">Next</p>
+            <h2 className="section-title compact-title">See the education.</h2>
+            <p className="section-copy compact-copy">
+              The Education page covers academic background, tech stack, and the frameworks
+              that support this work.
+            </p>
+          </div>
+
+          <div className="contact-actions">
+            <Link className="button button-primary" to="/education">Open Education</Link>
+            <Link className="button button-secondary" to="/work">Back To Work</Link>
+          </div>
         </div>
       </section>
     </main>
